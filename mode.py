@@ -1,5 +1,4 @@
-# Student Performance Prediction using Linear Regression
-
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -7,8 +6,10 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+data_path = os.path.join(BASE_DIR, "data.csv")
 
-data = pd.read_csv("data.csv")
+data = pd.read_csv(data_path)
 X = data[['study_hours', 'attendance', 'previous_score']]
 y = data['final_score']
 

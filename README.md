@@ -8,11 +8,6 @@ attendance, and previous academic scores using a supervised machine learning mod
 4. Evaluate model performance
 5. Visualize actual vs predicted values
 
-Results:
+## Results
 The model demonstrates a clear relationship between academic features
 and final performance.
-
-How to Run:-
-```bash
-pip install -r requirements.txt
-python mode.py
